@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10315a"/>
+      <stop offset="1" stop-color="#0b2440"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <circle cx="390" cy="290" r="150" fill="none" stroke="#c9a227" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="390" cy="290" r="110" fill="none" stroke="#c9a227" stroke-opacity="0.22" stroke-width="1.5"/>
+  <path d="M400 250 v130 M400 250 a26 26 0 1 0 0.01 0 M330 330 h-35 a105 105 0 0 0 210 0 h-35 M355 285 h90"
+        stroke="#d9b64a" stroke-opacity="0.85" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="6" fill="#e6cd7d" fill-opacity="0.9">Photo</text>
+  <text x="400" y="516" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" letter-spacing="3" fill="#7fa6cf" fill-opacity="0.8">PLACEHOLDER - REPLACE WITH APPROVED PHOTO</text>
+</svg>

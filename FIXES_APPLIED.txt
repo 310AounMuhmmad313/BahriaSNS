@@ -1,0 +1,9 @@
+Bahria Navy School Portal - fixes applied
+
+1. SettingsProvider now wraps the entire app, including /admin routes. Previously it only wrapped public pages, while AdminLayout and Website Content used the settings context outside the provider.
+2. Removed the duplicate nested SettingsProvider from PublicLayout so public and admin pages share one settings state.
+3. Website Content editor now initializes fields from DEFAULT_SETTINGS plus values loaded from Supabase, so missing database rows still show editable defaults.
+4. After database settings refresh, unsaved edits are preserved while saved values are reloaded. Discard now restores actual loaded/default values rather than keeping stale drafts.
+5. Settings loading errors are logged and the UI falls back to default settings instead of leaving the Website Content editor stuck in a loading state. Save still requires a working Supabase connection and valid admin permissions.
+
+Build note: source syntax was checked across 53 JS/JSX files. A production build could not be verified in this environment because the uploaded node_modules did not include the Linux Rollup optional dependency; run npm install on your Windows PC before npm run build.
